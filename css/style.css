@@ -1,0 +1,271 @@
+/* === Reset و تنظیمات پایه === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #202124;
+}
+
+
+header {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.nav-link {
+  font-size: 15px;
+  color: #202124;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.top-icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.top-icon:hover {
+  background-color: #f2f2f2;
+}
+
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 120px 20px 40px;
+}
+
+.logo-wrapper {
+  display: block;
+  padding: 16px;
+  border-radius: 12px; 
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.google-logo {
+  height: 120px;
+  width: auto;
+  display: block;
+}
+
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 12px 16px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.search-container:focus-within {
+  box-shadow: 0 1px 10px rgba(32, 33, 36, 0.38);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon {
+  width: 20px;
+  height: auto;
+  margin: 0 8px;
+  cursor: pointer;
+  opacity: 0.86;
+}
+
+.search-icon:hover {
+  opacity: 1;
+}
+
+.left-icon {
+  margin-left: 8px;
+  margin-right: 12px;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+
+.ai-mode-icon {
+  width: 80px;
+  height: auto;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  color: #202124;
+  direction: ltr;
+  text-align: left;
+}
+
+.search-input::placeholder {
+  color: #9aa0a6;
+  direction: ltr;
+  text-align: left;
+}
+
+
+.search-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+}
+
+.search-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #3c4043;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-btn:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-color: #f8f9fa;
+  border-color: #dadce0;
+}
+
+
+@media (max-width: 600px) {
+  .search-container {
+    padding: 10px 12px;
+  }
+
+  .search-input {
+    font-size: 16px;
+  }
+
+  .search-buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .search-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .logo-wrapper {
+    padding: 12px;
+    border-radius: 10px;
+  }
+}
+
+
+.google-logo-text {
+  font-family: 'Product Sans', 'Google Sans', Arial, sans-serif;
+  font-size: 110px;
+  font-weight: normal;
+  background: linear-gradient(to right, 
+    #4285F4, 
+    #EA4335, 
+    #FBBC05, 
+    #4285F4, 
+    #34A853, 
+    #EA4335  
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -2px;
+  line-height: 1.15;
+  margin-bottom: 70px;
+}
+
+
+
+.google-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 20px;
+  background: #fff;
+  font-size: 14px;
+  color: #70757a;
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer-top,
+.footer-bottom {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-top a,
+.footer-bottom a {
+  color: #70757a;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-top a:hover,
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom span {
+  color: #70757a;
+}
+
+/* برای موبایل */
+@media (max-width: 600px) {
+  .google-footer {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+  .footer-top,
+  .footer-bottom {
+    gap: 12px;
+  }
+}
