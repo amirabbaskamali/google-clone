@@ -222,6 +222,19 @@ header {
 
 
 
+
+@media (max-width: 600px) {
+  .google-footer {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+  .footer-top,
+  .footer-bottom {
+    gap: 12px;
+  }
+}
+
+
 .google-footer {
   position: absolute;
   bottom: 0;
@@ -234,38 +247,33 @@ header {
   border-top: 1px solid #e4e4e4;
 }
 
-.footer-top,
-.footer-bottom {
+.footer-content {
   display: flex;
-  gap: 24px;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-.footer-top a,
-.footer-bottom a {
+.footer-left a,
+.footer-right a {
   color: #70757a;
   text-decoration: none;
   font-size: 14px;
+  margin: 0 8px;
 }
 
-.footer-top a:hover,
-.footer-bottom a:hover {
+.footer-left a:first-child,
+.footer-right a:first-child {
+  margin-left: 0;
+}
+
+.footer-left a:last-child,
+.footer-right a:last-child {
+  margin-right: 0;
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
   text-decoration: underline;
-}
-
-.footer-bottom span {
-  color: #70757a;
-}
-
-
-@media (max-width: 600px) {
-  .google-footer {
-    padding: 12px 16px;
-    font-size: 13px;
-  }
-  .footer-top,
-  .footer-bottom {
-    gap: 12px;
-  }
 }
