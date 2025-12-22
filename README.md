@@ -1,3 +1,5 @@
+"This project is a frontend clone for educational purposes only and is not associated with Google LLC in any way."
+
 # Google Homepage Clone
 
 A clean and responsive clone of Google's homepage.
